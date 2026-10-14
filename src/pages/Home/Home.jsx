@@ -16,7 +16,6 @@ const OWNER = {
   roles: ['Renewable Energy Infrastructure Developer', 'Manufacturer', 'Energy Storage Entrepreneur'],
   intro:
     'An integrated renewable energy infrastructure platform spanning EPC execution, manufacturing, utility-scale solar development and energy storage.',
-  note: 'Prepared for Banking & Financial Institutions • Confidential',
   email: 'info@gauravjain.com',
   phone: '+91 00000 00000',
   location: 'India',
@@ -176,7 +175,6 @@ const Home = () => {
               ))}
             </ul>
             <p className="mt-6 text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">{OWNER.intro}</p>
-            <p className="mt-4 text-[11px] tracking-wider uppercase text-gray-500">{OWNER.note}</p>
           </div>
           <div className="relative flex flex-col lg:flex-row items-center lg:items-end justify-center lg:justify-end gap-6 pt-8 lg:pt-0 -mx-4 sm:-mx-6 lg:mx-0 px-4 sm:px-6 lg:px-0 bg-emerald-950 lg:bg-transparent rounded-t-3xl lg:rounded-none">
             <Portrait src={portrait} className="w-64 lg:w-80 h-72 lg:h-[26rem] rounded-t-3xl lg:mr-24" />
