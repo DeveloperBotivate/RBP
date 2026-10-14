@@ -8,7 +8,7 @@ const MILESTONES = [
   ['2012', 'Formation of RBP Energy (India) Pvt. Ltd.'],
   ['2015', 'GERMI Solar Professional Certification'],
   ['2015–20', 'Execution of large-scale CREDA renewable energy programmes'],
-  ['2020–25', 'Installed solar portfolio exceeds 121 MW'],
+  ['2020–25', 'Installed solar portfolio exceeds 151 MW'],
   ['2021', 'Entry into manufacturing through Varyaa Renewable Pvt. Ltd.'],
   ['2025', 'Commissioning of 2 MW AC PM-KUSUM solar project'],
   ['2025', 'Development pipeline reaches 85.85 MW'],

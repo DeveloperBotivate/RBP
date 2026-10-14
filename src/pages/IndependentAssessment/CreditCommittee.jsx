@@ -2,16 +2,16 @@ import React from 'react';
 import { SectionShell, serif } from '../MyProfile/shared';
 
 const PROMOTER = [
-  { title: 'Experience', rating: 'STRONG', text: '20+ years of entrepreneurial experience and 13 years of renewable energy specialisation.' },
+  { title: 'Experience', rating: 'STRONG', text: '20+ years of entrepreneurial experience and 15+ years of renewable energy specialisation.' },
   { title: 'Technical Competence', rating: 'STRONG', points: ['Engineering degree', 'GERMI certification', 'Practical project experience'] },
   { title: 'Management Capability', rating: 'STRONG', points: ['SPJIMR Family Managed Business Programme', 'Large-scale project execution', 'Manufacturing diversification'] },
   { title: 'Industry Knowledge', rating: 'VERY STRONG', points: ['Solar EPC & agricultural solar', 'Rural infrastructure & utility solar', 'Manufacturing & energy storage'] },
 ];
 
 const BUSINESS = [
-  { title: 'Execution Capability', rating: 'VERY STRONG', points: ['121+ MW installed portfolio', '15,033+ CREDA solar pumps', 'Large-scale decentralised execution'] },
+  { title: 'Execution Capability', rating: 'VERY STRONG', points: ['151+ MW installed portfolio', '15,033+ CREDA solar pumps', 'Large-scale decentralised execution'] },
   { title: 'Market Position', rating: 'STRONG', points: ['Established presence across multiple states', 'Strong government-sector participation', 'Growing private-sector opportunities'] },
-  { title: 'Manufacturing Capability', rating: 'STRONG', points: ['₹76 Cr manufacturing platform', '5.53-acre industrial facility', 'GI manufacturing expansion'] },
+  { title: 'Manufacturing Capability', rating: 'STRONG', points: ['Industrial manufacturing platform', '5.53-acre industrial facility', 'GI manufacturing expansion'] },
   { title: 'Utility Development', rating: 'STRONG', points: ['Commissioned utility-scale project', '85.85 MW development pipeline', 'Growing development expertise'] },
   { title: 'Energy-Storage Readiness', rating: 'EMERGING STRONG', points: ['Initial participation via CSPDCL BESS', 'Potential for future expansion'] },
 ];

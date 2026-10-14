@@ -1,10 +1,7 @@
 import React from 'react';
 import { Sun, Factory, Zap, BatteryCharging, ShieldCheck, Quote } from 'lucide-react';
 import CountUp from '../../components/CountUp';
-import Reveal, { useInView } from '../../components/Reveal';
-import annexure3 from '../../Assets/3.jpg';
-import annexure4 from '../../Assets/4.jpg';
-import annexure5 from '../../Assets/5.jpg';
+import Reveal from '../../components/Reveal';
 
 export const serif = { fontFamily: '"Playfair Display", Georgia, serif' };
 
@@ -88,48 +85,17 @@ export const Journey = () => (
 
 /* ---------- Business Platform ---------- */
 const PILLARS = [
-  { icon: Sun, name: 'Solar EPC', value: '121+ MW', note: 'installed' },
-  { icon: Factory, name: 'Manufacturing', value: '₹ 76 Cr', note: 'FY25 turnover' },
+  { icon: Sun, name: 'Solar EPC', value: '151+ MW', note: 'installed' },
+  { icon: Factory, name: 'Manufacturing', value: '2,000 MT', note: 'monthly capacity' },
   { icon: Zap, name: 'Utility Solar', value: '85.85 MW', note: 'pipeline' },
   { icon: BatteryCharging, name: 'Energy Storage', value: '15 MW', note: '30 MWh BESS' },
 ];
 
-const REVENUE = [
-  { fy: 'FY23', cr: 131.9 },
-  { fy: 'FY24', cr: 168.93 },
-  { fy: 'FY25', cr: 167.76 },
-];
-
-const RevenueChart = () => {
-  const [ref, seen] = useInView(0.3);
-  const max = 200;
-  return (
-    <div ref={ref} className="bg-stone-50 rounded-2xl p-6 sm:p-8">
-      <div className="flex items-baseline justify-between">
-        <h3 className="text-xs font-semibold tracking-[0.2em] uppercase text-amber-700">RBP Energy revenue</h3>
-        <span className="text-xs text-gray-500">₹ crore</span>
-      </div>
-      <div className="mt-6 flex items-end gap-5 h-44" role="img" aria-label="Revenue FY23 131.90, FY24 168.93, FY25 167.76 crore rupees">
-        {REVENUE.map((r, i) => (
-          <div key={r.fy} className="flex-1 flex flex-col items-center justify-end h-full">
-            <span className="text-sm font-bold text-emerald-950 mb-2">{r.cr}</span>
-            <div
-              className="w-full rounded-t-lg bg-gradient-to-t from-emerald-950 to-emerald-700 transition-all duration-1000 ease-out"
-              style={{ height: seen ? `${(r.cr / max) * 100}%` : '0%', transitionDelay: `${i * 150}ms` }}
-            />
-            <span className="mt-2 text-xs font-semibold text-gray-500">{r.fy}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 const TRACK = [
   { value: '15,033+', label: 'CREDA solar pumps' },
+  { value: '30,000+', label: 'Total pumps deployed' },
   { value: '1,150+', label: 'Villages benefited' },
   { value: '6', label: 'States served' },
-  { value: '₹240+ Cr', label: 'Combined annual business' },
 ];
 
 export const Platform = () => (
@@ -149,12 +115,11 @@ export const Platform = () => (
       ))}
     </div>
 
-    <div className="mt-8 grid lg:grid-cols-[1fr_1.1fr] gap-6 items-stretch">
-      <Reveal><RevenueChart /></Reveal>
+    <div className="mt-8">
       <Reveal delay={150}>
-        <div className="h-full grid grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {TRACK.map((t) => (
-            <div key={t.label} className="rounded-2xl bg-emerald-950 text-white p-6 flex flex-col justify-center">
+            <div key={t.label} className="rounded-2xl bg-emerald-950 text-white p-6 flex flex-col justify-center text-center sm:text-left">
               <div className="text-3xl font-bold text-amber-400" style={serif}><CountUp value={t.value} /></div>
               <div className="mt-1 text-xs uppercase tracking-wider text-emerald-100">{t.label}</div>
             </div>
@@ -234,72 +199,4 @@ export const Assessment = () => (
   </Frame>
 );
 
-/* ---------- Annexures ---------- */
-const ANNEXURES = [
-  { src: annexure3, title: 'Annexure 1' },
-  { src: annexure4, title: 'Annexure 2' },
-  { src: annexure5, title: 'Annexure 3' },
-];
 
-export const Annexures = () => {
-  const [open, setOpen] = React.useState(null);
-
-  React.useEffect(() => {
-    if (open === null) return undefined;
-    const onKey = (e) => {
-      if (e.key === 'Escape') setOpen(null);
-      else if (e.key === 'ArrowRight') setOpen((o) => (o + 1) % ANNEXURES.length);
-      else if (e.key === 'ArrowLeft') setOpen((o) => (o - 1 + ANNEXURES.length) % ANNEXURES.length);
-    };
-    document.body.style.overflow = 'hidden';
-    window.addEventListener('keydown', onKey);
-    return () => {
-      document.body.style.overflow = '';
-      window.removeEventListener('keydown', onKey);
-    };
-  }, [open]);
-
-  return (
-    <Frame id="annexures" label="Annexures" title="Supporting documents." dark>
-      <div className="grid md:grid-cols-3 gap-6">
-        {ANNEXURES.map((a, i) => (
-          <Reveal key={a.title} delay={i * 120}>
-            <button
-              type="button"
-              onClick={() => setOpen(i)}
-              className="block w-full rounded-2xl overflow-hidden border border-emerald-800 hover:border-amber-500 transition-colors bg-white cursor-zoom-in"
-            >
-              <img src={a.src} alt={a.title} loading="lazy" className="w-full h-auto" />
-            </button>
-            <p className="mt-3 text-sm font-semibold text-emerald-100">{a.title}</p>
-          </Reveal>
-        ))}
-      </div>
-
-      {open !== null && (
-        <div
-          className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4"
-          role="dialog"
-          aria-modal="true"
-          aria-label={ANNEXURES[open].title}
-          onClick={() => setOpen(null)}
-        >
-          <button
-            type="button"
-            onClick={() => setOpen(null)}
-            aria-label="Close"
-            className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white text-emerald-950 text-2xl leading-none flex items-center justify-center"
-          >
-            ×
-          </button>
-          <img
-            src={ANNEXURES[open].src}
-            alt={ANNEXURES[open].title}
-            onClick={(e) => e.stopPropagation()}
-            className="max-w-full max-h-full object-contain rounded-lg bg-white"
-          />
-        </div>
-      )}
-    </Frame>
-  );
-};

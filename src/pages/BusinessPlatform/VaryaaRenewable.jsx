@@ -53,8 +53,8 @@ const VaryaaRenewable = () => (
         </ul>
       </div>
       <div className="bg-emerald-950 text-white rounded-xl p-6 text-center flex flex-col justify-center">
-        <div className="text-4xl font-bold text-amber-400"><CountUp value="₹ 76 Cr" /></div>
-        <div className="mt-1 text-xs tracking-[0.2em] uppercase">FY 2024-25 turnover</div>
+        <div className="text-4xl font-bold text-amber-400"><CountUp value="2,000 MT" /></div>
+        <div className="mt-1 text-xs tracking-[0.2em] uppercase">Monthly Proposed Capacity</div>
       </div>
     </div>
     <p className="mt-4 text-sm text-gray-600">

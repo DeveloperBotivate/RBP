@@ -6,7 +6,7 @@ import Reveal from '../../components/Reveal';
 import {
   User, Building2, Factory, Sun, BatteryCharging, Menu, X,
 } from 'lucide-react';
-import { Profile, Journey, Platform, Growth, Assessment, Annexures, serif } from './Sections';
+import { Profile, Journey, Platform, Growth, Assessment, serif } from './Sections';
 
 // Business owner profile content — edit here to update the page.
 const OWNER = {
@@ -23,7 +23,7 @@ const OWNER = {
 
 const STATS = [
   { icon: Building2, value: '20+ Years', label: 'Entrepreneurial experience, since 2005' },
-  { icon: Sun, value: '13+ Years', label: 'Specialised in renewable energy infrastructure' },
+  { icon: Sun, value: '15+ Years', label: 'Specialised in renewable energy infrastructure' },
   { icon: Factory, value: 'RBP Energy (India) Pvt. Ltd.', label: 'Founded in 2012' },
   { icon: BatteryCharging, value: 'B.Tech, SPJIMR, GERMI', label: 'Engineering, family-business and solar training' },
 ];
@@ -34,11 +34,10 @@ const NAV = [
   { href: '#business-platform', label: 'Business Platform' },
   { href: '#future-growth', label: 'Future Growth' },
   { href: '#independent-assessment', label: 'Independent Assessment' },
-  { href: '#annexures', label: 'Annexures' },
 ];
 
 // Every section on the page, for scroll tracking.
-const SECTION_IDS = ['home', 'about', 'business-journey', 'business-platform', 'future-growth', 'independent-assessment', 'annexures'];
+const SECTION_IDS = ['home', 'about', 'business-journey', 'business-platform', 'future-growth', 'independent-assessment'];
 
 const script = { fontFamily: '"Great Vibes", cursive' };
 
@@ -209,7 +208,6 @@ const Home = () => {
       <Platform />
       <Growth />
       <Assessment />
-      <Annexures />
 
       <Footer />
     </div>

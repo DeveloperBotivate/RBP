@@ -4,9 +4,9 @@ import { SectionShell, serif } from '../MyProfile/shared';
 import CountUp from '../../components/CountUp';
 
 const REVENUE = [
-  ['FY 2022-23', '₹ 131.90 Crore'],
-  ['FY 2023-24', '₹ 168.93 Crore'],
-  ['FY 2024-25', '₹ 167.76 Crore'],
+  ['FY 2022-23', 'Operational Scale'],
+  ['FY 2023-24', 'Execution Expansion'],
+  ['FY 2024-25', 'Sustained Growth'],
 ];
 
 const ANALYSIS = [

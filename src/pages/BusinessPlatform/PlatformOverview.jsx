@@ -16,7 +16,7 @@ const PlatformOverview = () => (
     intro="An integrated renewable energy infrastructure platform built on four strategic pillars."
   >
     <p className="text-gray-600 leading-relaxed max-w-4xl">
-      Over the last thirteen years, RBP Energy and its associated group companies have evolved from a renewable
+      Over the last fifteen years, RBP Energy and its associated group companies have evolved from a renewable
       energy EPC organisation into a diversified renewable energy infrastructure platform. The business today rests on
       four strategic pillars.
     </p>

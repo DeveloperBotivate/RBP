@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-// Animated number for highlight stats. Pass the display string as-is ("121+ MW", "15,033+", "₹ 76 Cr",
+// Animated number for highlight stats. Pass the display string as-is ("151+ MW", "15,033+", "2,000 MT",
 // "85.85 MW"): the first number in it counts up from 0 once it scrolls into view, keeping its prefix,
 // suffix, decimals and thousands separator. Strings with no number render unchanged.
 const NUMBER = /\d[\d,]*(?:\.\d+)?/;

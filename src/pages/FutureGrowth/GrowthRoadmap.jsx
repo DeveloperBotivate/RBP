@@ -21,9 +21,9 @@ const ROADMAP = [
 ];
 
 const POSITIONED = [
-  { value: '121+ MW', label: 'Execution experience' },
+  { value: '151+ MW', label: 'Execution experience' },
   { value: 'CREDA', label: 'Government credentials' },
-  { value: '₹ 76 Cr', label: 'Manufacturing platform' },
+  { value: '2,000 MT', label: 'Proposed monthly capacity' },
   { value: '5.53 ac', label: 'Industrial infrastructure' },
   { value: '85.85 MW', label: 'Utility solar pipeline' },
   { value: '15 MW', label: 'Energy-storage entry' },

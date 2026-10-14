@@ -8,7 +8,7 @@ const TIMELINE = [
   { year: '2012', title: 'Formation of RBP Energy (India) Pvt. Ltd.', text: 'A dedicated renewable energy enterprise is born.' },
   { year: '2015', title: 'GERMI Solar Professional Certification' },
   { year: '2015–20', title: 'Expansion through CREDA Programmes', text: 'Large-scale solar irrigation and rural renewable deployment.' },
-  { year: '2020–25', title: 'Scale-Up Phase', text: '121+ MW installed • 15,033+ CREDA pumps • multi-state operations.' },
+  { year: '2020–25', title: 'Scale-Up Phase', text: '151+ MW installed • 15,033+ CREDA pumps • multi-state operations.' },
   { year: '2021', title: 'Entry into Manufacturing', text: 'Varyaa Renewable Pvt. Ltd. established.' },
   { year: '2025', title: 'First Utility-Scale Project Commissioned', text: '2.6 MW DC / 2 MW AC PM-KUSUM solar plant, Chhindwara (MP).' },
   { year: '2025', title: 'Pipeline Expanded to 85.85 MW', text: '44 PM-KUSUM projects under development.' },

@@ -8,15 +8,15 @@ const POINTS = [
   },
   {
     title: 'Strong Renewable Energy Track Record',
-    text: '121+ MW installed, 15,033+ CREDA pumps, 30,000+ pump deployments, 12,000+ solar home-lighting systems and 1,100+ villages served — execution capability at scale.',
+    text: '151+ MW installed, 15,033+ CREDA pumps, 30,000+ pump deployments, 12,000+ solar home-lighting systems and 1,100+ villages served — execution capability at scale.',
   },
   {
     title: 'Government Project Credentials',
     text: 'Extensive CREDA and PM-KUSUM experience demonstrating technical, financial, administrative and compliance discipline that strengthens institutional credibility.',
   },
   {
-    title: 'Financial Scale',
-    text: 'Sustained turnover — ₹131.90 Cr (FY23), ₹168.93 Cr (FY24), ₹167.76 Cr (FY25) — plus Varyaa Renewable at ₹76 Cr (FY25), taking combined business activity beyond ₹240 Cr annually.',
+    title: 'Operational Scale',
+    text: 'Proven execution capability and sustained performance across multiple project cycles, supported by integrated manufacturing and utility-scale development.',
   },
   {
     title: 'Manufacturing Integration',

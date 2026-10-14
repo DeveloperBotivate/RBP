@@ -3,7 +3,7 @@ import { SectionShell } from '../MyProfile/shared';
 import CountUp from '../../components/CountUp';
 
 const STATS = [
-  { value: '121+ MW', label: 'Installed solar capacity' },
+  { value: '151+ MW', label: 'Installed solar capacity' },
   { value: '15,033+', label: 'CREDA solar pumps' },
   { value: '30,000+', label: 'Total pumps (incl. KUSUM-B)' },
   { value: '5,000+', label: 'Solar power plants' },
